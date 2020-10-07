@@ -1,0 +1,5 @@
+In this i have created two schema one is for storing the data about the passengers and the driver. For each user type there is key maintained in the db which should be either be passenger or the driver.
+
+There is also one schema called as rides which is used to store the information about the ride that the user has taken.In this schema i have maintained two keys for ratings one is passengerRating and other is driverRating which is used to maintain the ratings for two of them. So to update the rating the user should be an authroized user. So when a user updates the rating i have post query middleware with the statics method to update the user average ratings.
+
+When a user logged in we gets its type weather he is a passenger or driver, so when a passenger rates , he can pnly gibve ratings to a driver and a driver can also give ratings to the user.
